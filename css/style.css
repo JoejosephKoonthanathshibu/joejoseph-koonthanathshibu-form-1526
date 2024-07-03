@@ -1,0 +1,164 @@
+/* Colors: 
+
+#DDD
+
+#F5F5F5
+
+#6495ED*/
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 50rem;
+    margin: auto;
+    padding: 20px;
+}
+
+#bg-text {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 5px 0;
+    position: relative;
+    top: 70px;
+    left: 30px;
+    background-size: cover;
+    background-color: white;
+    border: #DDD 1px solid;
+}
+
+#bg-text h3 {
+    color:#202020 ;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: 400; 
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 5px;
+}
+
+form label {
+    margin-top: 10px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.info {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    width: 100%;
+
+}
+
+.container {
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 30px;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+}
+
+#fullname {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#email {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: #DDD 2px solid;
+    border-radius: 5px;
+
+}
+
+form textarea {
+    height: 100px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form button {
+    padding: 10px;
+    background-color: #6495ED;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    margin-top: 20px;
+    border-radius: 3px;
+}
+
+form button:hover {
+    background-color: #2980b9;
+}
+/* Responsive Design */
+@media (max-width: 50rem) {
+    body {
+        font-size: 1rem;
+        overflow: scroll;
+    }
+
+    #bg-text {
+        width: 70%;
+        padding: 0px;
+        top: 100px;
+        left: 10%;
+    }
+
+    form {
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 20px;
+
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .info {
+        flex-direction: column;
+        padding-top: 20px;
+    }
+
+    .container {
+        margin-top: 20px;
+    }
+
+    form button {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        margin-top: 20px;
+    }
+}
